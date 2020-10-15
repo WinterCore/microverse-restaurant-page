@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgba(36, 42, 47, 0.92);
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header .logo {
+  height: 100%;
+  display: block;
+}
+
+nav {
+  font-weight: bold;
+}
+
+nav > div {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.tab {
+  padding-top: 100px;
+  min-height: 700px;
+}
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.png);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+  font-family: Philosopher, sans-serif;
+}
+
+h1.title {
+  font-size: 54px;
+}
+
+.flex { display: flex; }
+.flex.justify-center { justify-content: center; }
+.flex.justify-between { justify-content: space-between; }
+.flex.align-center { align-items: center; }
