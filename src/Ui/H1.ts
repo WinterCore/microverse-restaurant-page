@@ -1,5 +1,5 @@
-import UiComponent from './UiComponent';
-import Tag from './Tag';
+import UiComponent from "./UiComponent";
+import Tag from "./Tag";
 
 export default class H1 implements UiComponent {
     constructor(private body?: UiComponent,

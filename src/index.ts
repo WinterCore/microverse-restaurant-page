@@ -5,6 +5,7 @@ import Nav from "./Ui/Nav";
 import Header from "./Ui/Header";
 import Img from "./Ui/Img";
 import TextNode from "./Ui/TextNode";
+import Menu from "./Components/Menu";
 
 const $root: HTMLElement = document.querySelector("#content");
 
@@ -15,9 +16,9 @@ const $root: HTMLElement = document.querySelector("#content");
         ),
         new Nav(
             new ComponentsList([
-                new Div(new TextNode("Home")),
-                new Div(new TextNode("Menu")),
-                new Div(new TextNode("About"))
+                new Div(new TextNode("Home"), { class: "tab-button", "data-tab": 1 }),
+                new Div(new TextNode("Menu"), { class: "tab-button", "data-tab": 2 }),
+                new Div(new TextNode("About"), { class: "tab-button", "data-tab": 3 })
             ]),
             { class: "flex" }
         ),
@@ -26,4 +27,14 @@ const $root: HTMLElement = document.querySelector("#content");
     { class: "flex justify-between align-center" }
 )).appendTo($root);
 
-(new Home()).appendTo(document.querySelector("#content"));
+
+const TABS = [Home, Menu];
+
+(new TABS[0]()).appendTo($root);
+
+document.querySelectorAll("header nav .tab-button").forEach((item) => {
+    item.addEventListener("click", function onTabButtonClick() {
+        document.querySelector("#content .tab").remove();
+        (new TABS[+this.dataset.tab - 1]()).appendTo($root);
+    });
+});

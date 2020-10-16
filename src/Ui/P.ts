@@ -1,16 +1,16 @@
 import UiComponent from "./UiComponent";
 import Tag from "./Tag";
 
-export default class Img implements UiComponent {
-    constructor(private src: string,
+export default class H1 implements UiComponent {
+    constructor(private body?: UiComponent,
                 private attrs?: {[key: string]: any}) {
     }
 
     appendTo(entry: HTMLElement): void {
         new Tag(
-            "img",
-            null,
-            Object.assign({ src: this.src }, this.attrs),
+            "p",
+            this.body,
+            this.attrs,
         ).appendTo(entry);
     }
 }

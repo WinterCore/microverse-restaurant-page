@@ -1,7 +1,7 @@
-import UiComponent from '../Ui/UiComponent';
-import Div from '../Ui/Div';
-import TextNode from '../Ui/TextNode';
-import H1 from '../Ui/H1';
+import UiComponent from "../Ui/UiComponent";
+import Div from "../Ui/Div";
+import TextNode from "../Ui/TextNode";
+import H1 from "../Ui/H1";
 
 export default class Home implements UiComponent {
     appendTo(entry: HTMLElement): void {

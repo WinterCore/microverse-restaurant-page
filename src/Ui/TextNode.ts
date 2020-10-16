@@ -1,4 +1,4 @@
-  import UiComponent from './UiComponent';
+  import UiComponent from "./UiComponent";
 
 export default class TextNode implements UiComponent {
     constructor(private text: string) {}
