@@ -1,6 +1,6 @@
 # Microverse Javascript Restaurant Page
 
-> Libary-js is a simple introductory javascript project to demonstrate how to create a form using HTML and use Javascript to populate it.
+> This project contains a simple page for a restaurant that contains 3 tabs a home page, a basic menu of some of the plates served, and a contact page.
 
 ![](demo.gif)
 
