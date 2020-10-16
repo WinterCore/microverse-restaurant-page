@@ -23,7 +23,7 @@ module.exports = {
     open: true,
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[hash]_bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
