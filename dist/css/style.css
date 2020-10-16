@@ -35,7 +35,7 @@ nav > div {
 }
 
 nav > div:hover {
-  color: #DB9A64;
+  color: #db9a64;
 }
 
 .tab {
@@ -66,9 +66,8 @@ nav > div:hover {
 
 .about-container {
   max-width: 1100px;
-  margin-top: 20px;
   padding: 20px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .about-info {
@@ -114,7 +113,7 @@ nav > div:hover {
 }
 
 .menu-item .menu-item-thumb {
-  flex: 1 1 45%
+  flex: 1 1 45%;
 }
 
 .menu-item-data {
@@ -131,7 +130,7 @@ nav > div:hover {
 }
 
 .menu-item-data .price {
-  color: #DB9A64;
+  color: #db9a64;
   font-size: 26px;
 }
 
