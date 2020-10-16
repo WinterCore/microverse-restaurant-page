@@ -34,8 +34,12 @@ nav > div {
   cursor: pointer;
 }
 
+nav > div:hover {
+  color: #DB9A64;
+}
+
 .tab {
-  padding: 100px 18px 40px;
+  padding: 100px 0 40px;
   min-height: 700px;
 }
 
@@ -45,6 +49,44 @@ nav > div {
   height: 100vh;
   position: relative;
   color: #fff;
+}
+
+.menu {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.about-heading {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/about.png) center center;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+  color: #fff;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin-top: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.about-info {
+  margin-top: 40px;
+}
+
+.about-info > div div:first-child {
+  font-size: 20px;
+}
+
+.about-info > div div:last-child {
+  color: #596672;
+}
+
+#map {
+  width: 100%;
+  border: 0;
+  height: 400px;
 }
 
 .title {

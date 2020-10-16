@@ -6,6 +6,7 @@ import Header from "./Ui/Header";
 import Img from "./Ui/Img";
 import TextNode from "./Ui/TextNode";
 import Menu from "./Components/Menu";
+import About from "./Components/About";
 
 const $root: HTMLElement = document.querySelector("#content");
 
@@ -28,7 +29,7 @@ const $root: HTMLElement = document.querySelector("#content");
 )).appendTo($root);
 
 
-const TABS = [Home, Menu];
+const TABS = [Home, Menu, About];
 
 (new TABS[0]()).appendTo($root);
 
