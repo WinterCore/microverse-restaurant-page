@@ -12,7 +12,7 @@
 - HTML
 - CSS
 
-## [Live demo](https://raw.githack.com/WinterCore/microverse-restaurant-page/feature/implementation/dist/index.html)
+## [Live demo](https://raw.githack.com/WinterCore/microverse-restaurant-page/master/dist/index.html)
 
 ### how to run locally
 
